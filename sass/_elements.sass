@@ -1,0 +1,119 @@
+@import "bourbon/bourbon"
+@import "sass/_blocks"
+
+/*Стандартные*/
+.btn
+	font-size: 23px
+	text-transform: uppercase
+	text-decoration: none
+	display: block
+	background-image: url(../img/btn.png)
+	background-repeat: no-repeat
+	background-size: 100% 156px
+	background-position: 0 0
+	height: 52px
+	line-height: 52px
+	text-align: center
+	font-family: "Fira Sans Condensed"
+	font-weight: 500
+	color: #2836bb
+	&:hover
+		color: #fff
+		background-position: 0 -52px
+		text-decoration: none
+	&:focus, &:active
+		color: #fff
+		background-position: 0 -104px
+		text-decoration: none
+
+
+
+/*Компоненты*/
+
+.h-logo
+	display: inline-block
+	img
+		display: block
+		max-width: 100%
+
+.h-phone
+	padding-left: 40px
+	display: inline-block
+	background-image: url(../img/icons/1.png)
+	background-repeat: no-repeat
+	background-position: left center
+	font-size: 26px
+	text-decoration: none
+	color: #000
+	span
+		color: #262972
+		font-size: 34px
+	&:hover, &:active, &:focus
+		text-decoration: none
+		color: #262972
+
+.h-text
+	font-size: 19px
+	display: block
+	width: 100%
+	text-align: center
+	color: #000
+	padding-bottom: 15px
+
+.h-search
+	height: 34px
+	border: none
+	display: block
+	padding: 0 24px
+	font-size: 17px
+	font-family: "Fira Sans Condensed"
+	font-weight: 500
+	width: 100%
+	border-right: 1px solid #959595
+	width: 50%
+	float: left
+	color: #000
+	&::-webkit-input-placeholder
+		opacity: 1
+		color: #000
+	&::-moz-placeholder
+		opacity: 1
+		color: #000
+	&:-moz-placeholder
+		opacity: 1
+		color: #000
+	&:-ms-input-placeholder
+		opacity: 1
+		color: #000
+	&__select
+		&-wp
+			float: left
+			width: 50%
+			padding-right: 46px
+	&__button
+		width: 44px
+		height: 46px
+		text-indent: -9999px
+		background-color: #ffd940
+		border: none
+		background-image: url(../img/icons/search.png)
+		background-repeat: no-repeat
+		background-position: center center
+		display: block
+		position: absolute
+		right: -1px
+		top: -1px
+		z-index: 1
+		&:hover
+			background-color: #ffef62
+		&:focus, &:active
+			background-color: #e0bc2d
+
+.h-callback
+	height: 46px
+	line-height: 46px
+	background-size: 100% 138px
+	&:hover
+		background-position: 0 -46px
+	&:active, &:focus
+		background-position: 0 -92px

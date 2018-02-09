@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/*Сброс*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp, small,
+strike, strong, sub, sup, tt, var, b, i,
+dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, nav, output, ruby, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+button, button:active, button:focus,
+input, input:active, input:focus {
+  outline: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/*Внешние блоки*/
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.25;
+  font-family: "Fira Sans Condensed";
+  overflow-x: hidden;
+}
+
+.header {
+  padding-top: 24px;
+}
+
+.header__h-logo {
+  padding-top: 17px;
+}
+
+.header__h-phone {
+  padding-bottom: 9px;
+}
+
+.header__h-search {
+  border: 1px solid #959595;
+  padding: 5px 0;
+  position: relative;
+}
+
+.header__h-center {
+  padding-top: 13px;
+}
+
+.header__h-search::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.header__h-search .ui-selectmenu-button.ui-button {
+  margin-right: 0;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+}
+
+.header__h-search .ui-selectmenu-text {
+  margin-right: 24px;
+  font-family: "Fira Sans Condensed";
+  font-weight: 500;
+  color: #000;
+}
+
+.header__h-search .ui-button {
+  padding: 0 24px;
+  line-height: 34px;
+}
+
+.header__h-search .ui-button .ui-icon {
+  display: none;
+}
+
+.header__h-search .ui-selectmenu-button-closed::after {
+  content: '';
+  display: block;
+  width: 13px;
+  height: 7px;
+  background-image: url(../img/icons/select-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  margin-top: -3.5px;
+}
+
+.header__h-search .ui-selectmenu-button-open::after {
+  content: '';
+  display: block;
+  width: 13px;
+  height: 7px;
+  background-image: url(../img/icons/select-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  margin-top: -3.5px;
+}
+
+/*Стандартные*/
+.btn {
+  font-size: 23px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  background-image: url(../img/btn.png);
+  background-repeat: no-repeat;
+  background-size: 100% 156px;
+  background-position: 0 0;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  font-family: "Fira Sans Condensed";
+  font-weight: 500;
+  color: #2836bb;
+}
+
+.btn:hover {
+  color: #fff;
+  background-position: 0 -52px;
+  text-decoration: none;
+}
+
+.btn:focus, .btn:active {
+  color: #fff;
+  background-position: 0 -104px;
+  text-decoration: none;
+}
+
+/*Компоненты*/
+.h-logo {
+  display: inline-block;
+}
+
+.h-logo img {
+  display: block;
+  max-width: 100%;
+}
+
+.h-phone {
+  padding-left: 40px;
+  display: inline-block;
+  background-image: url(../img/icons/1.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-size: 26px;
+  text-decoration: none;
+  color: #000;
+}
+
+.h-phone span {
+  color: #262972;
+  font-size: 34px;
+}
+
+.h-phone:hover, .h-phone:active, .h-phone:focus {
+  text-decoration: none;
+  color: #262972;
+}
+
+.h-text {
+  font-size: 19px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  padding-bottom: 15px;
+}
+
+.h-search {
+  height: 34px;
+  border: none;
+  display: block;
+  padding: 0 24px;
+  font-size: 17px;
+  font-family: "Fira Sans Condensed";
+  font-weight: 500;
+  width: 100%;
+  border-right: 1px solid #959595;
+  width: 50%;
+  float: left;
+  color: #000;
+}
+
+.h-search::-webkit-input-placeholder {
+  opacity: 1;
+  color: #000;
+}
+
+.h-search::-moz-placeholder {
+  opacity: 1;
+  color: #000;
+}
+
+.h-search:-moz-placeholder {
+  opacity: 1;
+  color: #000;
+}
+
+.h-search:-ms-input-placeholder {
+  opacity: 1;
+  color: #000;
+}
+
+.h-search__select-wp {
+  float: left;
+  width: 50%;
+  padding-right: 46px;
+}
+
+.h-search__button {
+  width: 44px;
+  height: 46px;
+  text-indent: -9999px;
+  background-color: #ffd940;
+  border: none;
+  background-image: url(../img/icons/search.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  z-index: 1;
+}
+
+.h-search__button:hover {
+  background-color: #ffef62;
+}
+
+.h-search__button:focus, .h-search__button:active {
+  background-color: #e0bc2d;
+}
+
+.h-callback {
+  height: 46px;
+  line-height: 46px;
+  background-size: 100% 138px;
+}
+
+.h-callback:hover {
+  background-position: 0 -46px;
+}
+
+.h-callback:active, .h-callback:focus {
+  background-position: 0 -92px;
+}
