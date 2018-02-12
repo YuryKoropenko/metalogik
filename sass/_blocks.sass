@@ -66,3 +66,37 @@ body
 			right: 12px
 			top: 50%
 			margin-top: -3.5px
+	&__bottom
+		margin-top: 40px
+		position: relative
+		&::after
+			content: ''
+			display: block
+			background-color: #2836bb
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			z-index: -2
+	&__h-compare
+		padding: 14px 0
+		position: relative
+		text-align: right
+		&::before
+			content: ''
+			width: 999px
+			top: 0
+			bottom: 0
+			display: block
+			background-color: #ffd940
+			position: absolute
+			z-index: -1
+
+.page
+	&__p-bigslider
+		border-bottom: 1px solid #9398cb
+	&__p-catline
+		padding-top: 75px
+		padding-bottom: 65px
+		border-bottom: 1px solid #9398cb
