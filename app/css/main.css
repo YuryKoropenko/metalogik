@@ -40,6 +40,7 @@ body {
   line-height: 1.25;
   font-family: "Fira Sans Condensed";
   overflow-x: hidden;
+  -webkit-transform: translateZ(0px);
 }
 
 .header {
@@ -126,6 +127,7 @@ body {
 .header__bottom {
   margin-top: 40px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .header__bottom::after {
@@ -169,6 +171,7 @@ body {
   padding-top: 75px;
   padding-bottom: 65px;
   border-bottom: 1px solid #9398cb;
+  overflow-x: hidden;
 }
 
 .page__p-question {
@@ -402,20 +405,34 @@ body {
 }
 
 .h-compare {
-  line-height: 36px;
   display: inline-block;
-  text-transform: uppercase;
-  color: #2836bb;
-  font-size: 18px;
-  font-weight: 500;
+  width: 100%;
   text-decoration: none;
   padding-right: 42px;
   background-image: url(../img/icons/h-compare.png);
   background-repeat: no-repeat;
   background-position: right center;
+  height: 36px;
+  position: relative;
 }
 
-.h-compare:hover, .h-compare:focus, .h-compare:active {
+.h-compare span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  right: 0;
+  padding-right: 42px;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #2836bb;
+  font-weight: 500;
+  display: inline-block;
+  text-align: left;
+}
+
+.h-compare:hover span, .h-compare:focus span, .h-compare:active span {
   text-decoration: none;
   color: #2836bb;
 }
@@ -903,6 +920,9 @@ body {
   font-size: 16px;
   color: #fff;
   text-decoration: none;
+  background-image: url(../img/icons/1-wth.png);
+  background-repeat: no-repeat;
+  background-position: 0 10px;
 }
 
 .f-phone span {
