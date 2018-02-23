@@ -92,7 +92,7 @@
 		display: none
 	.p-catline
 		flex-wrap: wrap
-		justify-content: space-around
+		justify-content: center
 	.p-catline__item
 		width: 25%
 	.p-catline
@@ -108,12 +108,48 @@
 	.footer__f-pol,
 	.footer__f-sigma
 		width: 33.33333%
+	.page__p-filt
+		padding-left: 15px
+		margin-right: -15px
+		text-align: center
+	.page__p-filt-mob
+		border-left: none
+	.page__p-filt
+		margin-bottom: 13px
+	.row__p-filt
+		margin-bottom: 27px
+	.page__p-cardslider
+		margin-bottom: 20px
+	.page__marginfo
+		.col-lg-6
+			padding-left: 15px !important
+			padding-right: 15px !important
+			&::after
+				display: none !important
+	.page__marginfo
+		.col-md-12
+			display: none
+	.p-menu
+		@include clearfix
+		margin-left: -15px
+		margin-right: -15px
+		width: auto
+	.p-menu__item
+		width: 50%
+		float: left
+		padding: 0 15px
+	.p-menu__link::after
+		background-position: bottom center
+	.p-menu__item-active .p-menu__link::after
+		background-position: top center !important
+	.p-menu__submenu
+		display: none
 
 	/**/
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+@media only screen and (max-width : 767px)
 	.header__h-phone
 		width: 100%
 		text-align: center
@@ -142,18 +178,24 @@
 		position: absolute
 		left: 0
 		right: 0
-		top: 100%
+		top: 0
 		background-color: #2836bb
 		z-index: 20
 		display: none
+		padding: 52px 20px 30px
 	.header__h-nav
 		padding: 9px 0
 	.h-nav__item
 		display: block
-		text-align: center
+		text-align: left
 		width: auto
 		padding-left: 0
 		padding-right: 0
+		&:first-child
+			border-top: 1px solid #fff
+	.h-nav__link
+		display: block
+
 	.header__bottom
 		overflow: visible
 		position: relative
@@ -215,6 +257,68 @@
 		height: 135px
 		&::after
 			display: none
+	.page__p-filt
+		padding-left: 0
+		border-left: none
+		text-align: left
+		margin-right: 0
+		border-right: 1px solid #000
+	.h-nav__close
+		width: 19px
+		height: 18px
+		display: block
+		position: absolute
+		top: 19px
+		right: 20px
+		background-image: url(../img/icons/close.png)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		cursor: pointer
+	.p-catitem__btn-left
+		padding-right: 0
+	.p-catitem__btn-right
+		padding-left: 0
+	.page__p-catitem
+		padding-bottom: 15px
+	.p-cardslider__right
+		width: 100%
+	.p-cardslider__left
+		display: none
+	.p-cardslider__mob
+		.p-cardslider__thumbs
+			display: block
+			@include clearfix
+			margin-left: -3.33333%
+		.p-cardslider__thumb
+			width: 30%
+			margin-left: 3.33333%
+			float: left
+	.page__p-cardtop .p-catitem__btn-left
+		width: 100%
+		margin-right: 0
+		text-align: center
+	.page__p-cardtop .p-catitem__btn-right
+		width: 100%
+		.p-catitem__btn
+			text-align: center
+			padding-left: 0
+			padding-right: 56px
+	.page__p-cardtop .p-catitem__btn-right .p-catitem__btn::after
+		top: 14px
+		right: 80px
+	.page__p-bigtitle
+		display: none
+	.page__p-har .p-catitem__list .p-catitem__item:last-child
+		border-bottom: none
+	.p-menu
+		margin-left: 0
+		margin-right: 0
+		width: 100%
+	.p-menu__item
+		width: 100%
+		float: none
+		padding: 0
 	/**/
 
 
@@ -245,6 +349,10 @@
 	.h-nav__btn
 		display: none
 	.visible-xs
+		display: none !important
+	.h-nav__close
+		display: none
+	.p-cardslider__mob
 		display: none !important
 	/**/
 
