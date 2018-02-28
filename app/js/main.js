@@ -56,4 +56,7 @@ $(function() {
 		$(this).parent('.h-nav').slideUp();
 		return false;
 	});
+
+	$('.h-callback').fancybox();
+	$('.btn__buyoneclick').fancybox();
 });

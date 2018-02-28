@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="libs/bootstrap-4.0.0/dist/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
 	<link rel="stylesheet" href="libs/OwlCarousel2/dist/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="fonts/firasanscondensed/firasanscondensed.css">
+	<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -156,7 +156,7 @@
 													Lorem ipsum dolor sit amet, consectetur adipisicing.<br><br>
 													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam accusamus hic rerum quisquam beatae quidem mollitia ut perferendis.
 												</p>
-												<a href="#" class="btn p-bigslider__btn">
+												<a href="#buyoneclick" class="btn p-bigslider__btn btn__buyoneclick">
 													Заказать в 1 клик
 												</a>
 											</div>
@@ -509,6 +509,66 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="popup" id="callback" style="display: none;">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="popup__title-wp">
+					<div class="popup__title">
+						Заказать звонок
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup__left">
+					<input type="text" class="p-question__input" placeholder="Ваше имя*">
+					<input type="text" class="p-question__input" placeholder="Телефон*">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<textarea name="" class="p-question__textarea" placeholder="Вопрос или комментарий"></textarea>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="popup__btn-wp">
+					<a href="#" class="btn popup__btn">
+						Оформить
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup" id="buyoneclick" style="display: none;">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="popup__title-wp">
+					<div class="popup__title">
+						Заказать в 1 клик
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup__left">
+					<input type="text" class="p-question__input" placeholder="Ваше имя*">
+					<input type="text" class="p-question__input" placeholder="Фамилия*">
+					<input type="text" class="p-question__input" placeholder="Отчество*">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<input type="text" class="p-question__input" placeholder="E-mail*">
+				<input type="text" class="p-question__input" placeholder="Телефон*">
+				<a href="#" class="btn popup__btn">
+					Оформить
+				</a>
+			</div>
+		</div>
+	</div>
 
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery-3.3.1.min.js"></script>
